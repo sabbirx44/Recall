@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TOUR</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        #element {
+            color: black;
+        }
+
+        li {
+            color: blue;
+        }
+
+        .elements {
+            color: green;
+        }
+
+        .full-stack li {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 id="element" class="title bg">Hi, Seaum!</h1>
+        <h1>Welcome to JS DOM.</h1>
+
+        <ul>
+            <li class="elements">Document</li>
+            <li class="elements">Object</li>
+            <li>Model</li>
+        </ul>
+    </section>
+
+    <section id="topics">
+        <ul class="full-stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/style-in-JS.js"></script>
+    <script>
+        //conosle.log("Hello from internal JS!")
+
+        // Option-1: getElementsByTagName
+        const allHeadings = document.getElementsByTagName('h1')
+        //console.log(allHeadings);
+        for (const heading of allHeadings) {
+            //console.log(heading);
+        }
+
+        const liCollection1 = document.getElementsByTagName('li');
+        //console.log(liCollection1);
+        for (const li of liCollection1) {
+            //console.log(li);
+        }
+
+        // Option-2: getElementById 
+        const element = document.getElementById('element');
+
+        // Option-3: getElementsByClassName | [index]
+        const elements = document.getElementsByClassName('elements')
+        for (const element of elements) {
+            //console.log(element)
+        }
+
+        // Option-4: querySelector
+        // Option-5: querySelectorAll
+        const liCollection2 = document.querySelectorAll('.full-stack li');
+        //console.log(liCollection2)
+        for (const li of liCollection2) {
+            //console.log(li)
+        }
+
+        // style.cssProperty = '' | var set.getAttribute('id', 'class') | classList.(add(''), remove('')) | var set.setAttribute('name', 'value') | innerHTML vs innerText?
+    </script>
+</body>
+
+</html>
