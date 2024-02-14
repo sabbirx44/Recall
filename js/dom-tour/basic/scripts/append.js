@@ -14,7 +14,7 @@ const body = document.getElementById('body');
 const div = document.createElement('div');
 
 const h1 = document.createElement('h1');
-h1.innerText = 'Frameworks we want to learn - ';
+h1.innerText = 'Frameworks we want to learn -';
 div.appendChild(h1);
 
 const ul = document.createElement('ul');
@@ -24,7 +24,7 @@ li1.innerText = 'MongoDB';
 ul.appendChild(li1);
 
 const li2 = document.createElement('li');
-li2.innerText = 'Express.js';
+li2.innerText = 'Express.ja';
 ul.appendChild(li2);
 
 const li3 = document.createElement('li');
@@ -36,19 +36,23 @@ li4.innerText = 'Node';
 ul.appendChild(li4);
 
 div.appendChild(ul);
-parentBody.appendChild(div); */
+body.appendChild(div); */
 
-// System 2
+// System-2
 const body = document.getElementById('body');
 
-const div = document.createElement('div');
-div.innerHTML = `
-<h1>Frameworks we want to learn -</h1>
-<ul>
-    <li>MongoDB</li>
-    <li>Express.js</li>
-    <li>React</li>
-    <li>Node</li>
-</ul>
-`
-body.appendChild(div);
+const frameworkListDiv = document.createElement('div');
+frameworkListDiv.innerHTML = `
+    <h1>Frameworks we want to learn - </h1>
+    <ul>
+        <li>MongoDB</li>
+        <li>Express.js</li>
+        <li>React</li>
+        <li>Node</li>
+    </ul>
+`;
+body.appendChild(frameworkListDiv);
+
+const problemHeadingDiv = document.createElement('div');
+problemHeadingDiv.innerHTML = `<h1>Changed problem</h1>`;
+body.appendChild(problemHeadingDiv); // Append to the same 'body' element
