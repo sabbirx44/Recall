@@ -12,22 +12,25 @@
     <h2 id="handlers-status">First text</h2>
     <h3 id="input-text">Second text</h3>
 
-    <input type="text" id="input-field"><button id="btn-update">Update</button><br>
+    <input type="text" id="input-field">
+    <button id="btn-update">Update</button><br>
 
     <button onclick="handleOnclick()">Handle event by adding the onclick function.</button><br>
 
     <button id="event-listener">Handle event by addEventListener.</button>
     <script>
-        // Opt. 1 - 
+        // Opt-1:
         function handleOnclick() {
             const handlersStatus = document.getElementById('handlers-status');
             handlersStatus.innerText = 'Text updated by onclick function!';
         }
-        // Opt. 2 - 
+
+        // Opt-2:
         document.getElementById('event-listener').addEventListener('click', function () {
             const handlersStatus = document.getElementById('handlers-status');
             handlersStatus.innerText = 'Text updated by addEventListener!';
         })
+
         // Different use - 
         document.getElementById('btn-update').addEventListener('click', function () {
             const inputField = document.getElementById('input-field');
