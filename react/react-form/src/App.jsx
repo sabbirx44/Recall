@@ -1,27 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
 import './App.css'
-import ReusableForm from './components/ReusableForm/ReusableForm'
+import Grandpa from './components/Grandpa/Grandpa'
+// import ReusableForm from './components/ReusableForm/ReusableForm'
 // import HookForm from './components/HookForm/HookForm'
 // import RefForm from './components/RefForm/RefForm'
 // import StatefulForm from './components/StatefulForm/StatefulForm'
 // import Form from './components/Form/Form'
 
 function App() {
-  const handleSignUp = data => {
-    console.log('Sign Up data: ', data);
-  };
+  // const handleSignUp = data => {
+  //   console.log('Sign Up data: ', data);
+  // };
 
-  const handleProfileUpdate = data => {
-    console.log('Profile Update data: ', data);
-  };
+  // const handleProfileUpdate = data => {
+  //   console.log('Profile Update data: ', data);
+  // };
 
   return (
     <>
+      <Grandpa />
       {/* <Form /> */}
       {/* <StatefulForm /> */}
       {/* <RefForm /> */}
       {/* <HookForm /> */}
-      <ReusableForm formTitle={'Sign Up'} handleSubmit={handleSignUp}>
+      {/* <ReusableForm formTitle={'Sign Up'} handleSubmit={handleSignUp}>
         <div>
           <h2>Sign Up</h2>
           <p>It's premium!</p>
@@ -32,7 +34,7 @@ function App() {
           <h2>Update Profile</h2>
           <p>Real men always keep things up to date.</p>
         </div>
-      </ReusableForm>
+      </ReusableForm> */}
     </>
   )
 }
