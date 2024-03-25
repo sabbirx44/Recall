@@ -1,5 +1,6 @@
 import './App.css'
-import StatefulForm from './components/StatefulForm/StatefulForm'
+import RefForm from './components/RefForm/RefForm'
+// import StatefulForm from './components/StatefulForm/StatefulForm'
 // import Form from './components/Form/Form'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       {/* <Form /> */}
-      <StatefulForm />
+      {/* <StatefulForm /> */}
+      <RefForm />
     </>
   )
 }
